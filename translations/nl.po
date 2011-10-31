@@ -1,0 +1,42 @@
+# $Id$
+#
+# Dutch translation of Drupal (general)
+# Copyright 2011 Raymond Jelierse <r.jelierse@sparse.nl>
+# Generated from files:
+#  mosquito.info: n/a
+#  templates/node.tpl.php: n/a
+#  templates/page.tpl.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal Mosquito thema 1.0\n"
+"POT-Creation-Date: 2011-10-31 09:52+0100\n"
+"PO-Revision-Date: 2011-10-31 10:00+0100\n"
+"Last-Translator: Raymond Jelierse <r.jelierse@sparse.nl>\n"
+"Language-Team: Dutch <nl@drupal.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: mosquito.info:0
+msgid "Mosquito Darts"
+msgstr "Mosquito Darts"
+
+#: mosquito.info:0
+msgid "Drupal theme for mosquito-darts.nl"
+msgstr "Drupal thema voor mosquito-darts.nl"
+
+#: mosquito.info:0
+msgid "Content"
+msgstr "Inhoud"
+
+#: templates/node.tpl.php:54
+msgid "Posted by !author on !date"
+msgstr "Geplaatst door !author op !date"
+
+#: templates/page.tpl.php:93;94;100
+msgid "Home"
+msgstr "Beginpagina"
+
