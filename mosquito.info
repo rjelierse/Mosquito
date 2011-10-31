@@ -1,0 +1,10 @@
+name = Mosquito Darts
+description = Drupal theme for mosquito-darts.nl
+version = 6.x-1.0
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = fonts/webfont.css
+stylesheets[all][] = css/style.css
+
+regions[content] = Content

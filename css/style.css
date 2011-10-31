@@ -1,0 +1,326 @@
+/**
+ * Mosquito theme: stylesheet.
+ */
+
+body {
+	font-family: FrutigerLTStd, Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	background: #efefef;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Wrapper.
+ * Contains the entire website and keeps it in place.
+ */
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+#wrapper .wrapper-spacer {
+	height: 20px;
+	background: url('spacer.png') top center no-repeat;
+}
+
+/**
+ * Website header.
+ */
+#site-header {
+	height: 160px;
+	background: url('header-fill.png') top center repeat-y;
+	padding: 0 10px;
+}
+#site-header #site-logo {
+	float: left;
+}
+#site-header #site-name {
+	margin: 0;
+	margin-left: 128px;
+	padding: 0;
+	color: #ffffff;
+	font-weight: normal;
+	line-height: 48px;
+}
+#site-header #site-name a {
+    color: inherit;
+    text-decoration: none;
+}
+#site-header #site-navigation {
+	margin-left: 128px;
+}
+#site-header #site-navigation a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+/**
+ * Website content.
+ */
+#site-content {
+	background: url('content-fill.png') top center repeat-y;
+	padding: 0 5px 40px 5px;
+}
+/**
+ * Website content header: contains page title and tabbed navigation.
+ */
+#site-content #content-header {
+	height: 40px;
+	padding: 0;
+	background: #333333;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+#site-content #content-header #page-title {
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+#site-content #content-header nav {
+	padding-top: 4px;
+}
+#site-content #content-header nav ul.tabs li {
+	float: left;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+#site-content #content-header nav ul.tabs li a {
+	display: block;
+	background: inherit;
+	border: 0;
+	margin: 0;
+	padding: 0 20px;
+}
+#site-content #content-header nav ul.primary {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#site-content #content-header nav ul.primary li a {
+	height: 36px;
+	line-height: 36px;
+	color: inherit;
+}
+#site-content #content-header nav ul.primary li a.admin {
+	font-style: italic;
+}
+#site-content #content-header nav ul.primary li.active a,
+#site-content #content-header nav ul.primary li a.active {
+	background: #ffffff;
+	color: #333333;
+}
+#site-content #content-header nav ul.primary li a:hover {
+	background: #efefef;
+	color: #333333;
+}
+#site-content #content-header nav ul.secondary {
+	clear: left;
+	border: 0;
+	border-bottom: 2px solid #333333;
+	margin: 0;
+    padding: 0;
+	height: 34px;
+}
+#site-content #content-header nav ul.secondary li a {
+	margin-bottom: 10px;
+	border-right: 1px solid #dddddd;
+	border-bottom: 2px solid transparent;
+	line-height: 34px;
+    height: 34px;
+	color: #333333;
+}
+#site-content #content-header nav ul.secondary li a.active {
+	color: #bf0000;
+	border-bottom: 2px solid #bf0000;
+}
+#site-content #content-header nav ul.secondary li a:hover {
+	color: #bf0000;
+}
+/**
+ * Website content: status messages.
+ */
+#site-content #messages {
+    margin-bottom: 10px;
+}
+#site-content #messages .messages {
+    border:  1px solid #ffff00;
+    background: #fdfdae;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#site-content #messages .warning {
+    border-color:  #ff6600;
+    background: #ffcb98;
+}
+#site-content #messages .error {
+    border-color:  #ff0000;
+    background: #eebbbb;
+}
+/**
+ * Website content: help message.
+ */
+#site-content #help {
+    font-size: 0.95em;
+    line-height: 1.1em;
+    font-color: #333333;
+    margin-bottom: 1em;
+}
+/**
+ * Website content: actual content.
+ */
+#site-content #content {
+	padding: 10px;
+	clear: both;
+}
+/**
+ * Website content: content elements.
+ */
+#site-content table {
+	width: 100%;
+}
+#site-content thead th {
+	border-bottom: 1px solid #bf0000;
+	padding: 4px;
+	white-space: nowrap;
+}
+#site-content tbody {
+    border: 0 none;
+}
+#site-content tbody tr {
+    border:  0 none;
+}
+#site-content tbody tr.odd {
+    background: none;
+}
+#site-content tbody tr.even {
+	background: #efefef;
+}
+#site-content tbody td {
+	padding: 4px;
+	border-bottom: 1px solid #dddddd;
+}
+#site-content tbody td.numeric {
+	text-align: right;
+	width: 48px;
+	white-space: nowrap;
+}
+#site-content tbody td.date {
+    text-align: left;
+    width: 96px;
+    white-space: nowrap;
+}
+#site-content tbody tr.active td,
+#site-content tbody tr td.active {
+    color: #bf0000;
+    background: none;
+}
+#site-content tbody tr td.winner {
+    font-weight: bold;
+}
+#site-content #content a {
+	color: #bf0000;
+    text-decoration: none;
+}
+/**
+ * Scoreboard
+ */
+.result .scoreboard .winner .score {
+    background: #bf0000;
+}
+/**
+ * Content sections
+ */
+#site-content #content section {
+    margin-bottom: 20px;
+}
+#site-content #content section h3 {
+    font-size: 1.25em;
+    padding: 2px 4px;
+    border-bottom:  2px solid #bf0000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#site-content #content article h3 {
+    border: 0;
+    color: #bf0000;
+}
+#site-content #content article .node-meta {
+    color: #666666;
+    font-size: 0.9em;
+}
+#site-content #content section.profile-category {}
+#site-content aside.block dl,
+#site-content #content section.profile-category dl {
+    margin: 0;
+    margin-bottom: 20px;
+}
+#site-content aside.block dt,
+#site-content #content section.profile-category dt {
+    font-weight: bold;
+}
+#site-content aside.block dd,
+#site-content #content section.profile-category dd {
+    margin: 2px 0px 10px 0px;
+}
+
+#site-content address {
+    font-style: normal;
+    line-height: 1.3em;
+}
+#site-content address h4 {
+    margin: 0;
+}
+
+/**
+ * Columns layout.
+ */
+#site-content #content .column {
+    float: left;
+}
+#site-content #content .column:first-child {
+    margin-left: 0 !important;
+}
+#site-content #content .two-column-layout .column {
+    width: 460px;
+    margin-left: 10px;
+}
+#site-content #content .three-column-layout .column {
+    width: 302px;
+    margin-left: 12px;
+}
+
+/**
+ * Blocks.
+ */
+#site-content aside.block {
+    margin-bottom: 20px;
+}
+#site-content aside.block header h3 {
+    font-size: 1.25em;
+    padding: 2px 4px;
+    border-bottom:  2px solid #bf0000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/**
+ * Website footer.
+ */
+#site-footer {
+	background: url('footer.png') top center no-repeat;
+	padding: 20px 10px;
+	font-size: 0.90em;
+	color: #999999;
+}
+#site-footer a {
+	color: inherit;
+}
+#site-footer #footer-message {
+    text-align: center;
+}
