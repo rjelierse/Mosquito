@@ -10,6 +10,19 @@ body {
 	padding: 0;
 }
 
+body.admin-menu {
+    margin-top: 32px !important;
+}
+#admin-menu,
+#admin-menu ul {
+    line-height: 30px;
+    font-size: 0.9em;
+    background:  #333333;
+}
+#admin-menu li.admin-menu-icon img {
+    vertical-align: middle;
+}
+
 /**
  * Wrapper.
  * Contains the entire website and keeps it in place.
