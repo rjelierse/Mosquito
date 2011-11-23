@@ -8,6 +8,7 @@ body {
 	background: #efefef;
 	margin: 0;
 	padding: 0;
+    color: #333333;
 }
 
 body.admin-menu {
@@ -16,7 +17,7 @@ body.admin-menu {
 #admin-menu,
 #admin-menu ul {
     line-height: 30px;
-    font-size: 0.9em;
+    font-size: 12px;
     background:  #333333;
 }
 #admin-menu li.admin-menu-icon img {
@@ -306,6 +307,7 @@ article.node {
  */
 article.comment {
     border-bottom: 1px solid #bf0000;
+    margin-bottom: 1em;
 }
 article.comment footer {
     border-top: 1px solid #dddddd;
@@ -314,6 +316,12 @@ article.comment footer {
 article.comment header .submitted {
     font-size: 0.9em;
     color: #666666;
+}
+/**
+ * Linkroll
+ */
+#site-content #content .view-links .views-row-even a {
+    color: #333333;
 }
 
 /**
