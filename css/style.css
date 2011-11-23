@@ -23,6 +23,15 @@ body.admin-menu {
     vertical-align: middle;
 }
 
+ul.links li {
+    padding: 0;
+    padding-right: 0.5em;
+}
+
+.item-list .pager {
+    margin: 1em 0;
+}
+
 /**
  * Wrapper.
  * Contains the entire website and keeps it in place.
@@ -181,7 +190,7 @@ body.admin-menu {
 #site-content #help {
     font-size: 0.95em;
     line-height: 1.1em;
-    font-color: #333333;
+    color: #333333;
     margin-bottom: 1em;
 }
 /**
@@ -288,6 +297,23 @@ body.admin-menu {
 }
 #site-content address h4 {
     margin: 0;
+}
+article.node {
+    margin-bottom: 1em;
+}
+/**
+ * Comments
+ */
+article.comment {
+    border-bottom: 1px solid #bf0000;
+}
+article.comment footer {
+    border-top: 1px solid #dddddd;
+    padding: 0.5em;
+}
+article.comment header .submitted {
+    font-size: 0.9em;
+    color: #666666;
 }
 
 /**
