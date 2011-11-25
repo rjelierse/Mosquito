@@ -1,8 +1,10 @@
 name = Mosquito Darts
-description = Drupal theme for mosquito-darts.nl
+description = Theme for mosquito-darts.nl
 version = 6.x-1.0
 core = 6.x
 engine = phptemplate
+# Project hosted outside drupalcode.org
+project status url = http://dev.sparse.nl/release-history
 
 stylesheets[all][] = fonts/webfont.css
 stylesheets[all][] = css/style.css
