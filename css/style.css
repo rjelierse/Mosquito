@@ -25,8 +25,7 @@ body.admin-menu {
 }
 
 ul.links li {
-    padding: 0;
-    padding-right: 0.5em;
+    padding: 0 0.5em 0 0;
 }
 
 .item-list .pager {
@@ -58,12 +57,12 @@ ul.links li {
 	float: left;
 }
 #site-header #site-name {
-	margin: 0;
-	margin-left: 128px;
+	margin: 0 0 0 128px;
 	padding: 0;
 	color: #ffffff;
 	font-weight: normal;
-	line-height: 48px;
+	line-height: 80px;
+    font-size: 3em;
 }
 #site-header #site-name a {
     color: inherit;
@@ -75,7 +74,7 @@ ul.links li {
 #site-header #site-navigation a {
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1.15em;
 }
 
 /**
@@ -97,11 +96,9 @@ ul.links li {
 }
 #site-content #content-header #page-title {
 	float: left;
-	margin: 0;
+	margin: 0 40px 0 20px;
 	padding: 0;
 	line-height: 40px;
-	margin-left: 20px;
-	margin-right: 40px;
 }
 #site-content #content-header nav {
 	padding-top: 4px;
@@ -266,8 +263,7 @@ ul.links li {
     font-size: 1.25em;
     padding: 2px 4px;
     border-bottom:  2px solid #bf0000;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 #site-content #content article h3 {
     border: 0;
@@ -280,8 +276,7 @@ ul.links li {
 #site-content #content section.profile-category {}
 #site-content aside.block dl,
 #site-content #content section.profile-category dl {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 #site-content aside.block dt,
 #site-content #content section.profile-category dt {
@@ -289,7 +284,7 @@ ul.links li {
 }
 #site-content aside.block dd,
 #site-content #content section.profile-category dd {
-    margin: 2px 0px 10px 0px;
+    margin: 2px 0 10px 0;
 }
 
 #site-content address {
@@ -309,19 +304,35 @@ article.comment {
     border-bottom: 1px solid #bf0000;
     margin-bottom: 1em;
 }
-article.comment footer {
-    border-top: 1px solid #dddddd;
-    padding: 0.5em;
-}
 article.comment header .submitted {
     font-size: 0.9em;
     color: #666666;
+}
+article.comment footer {
+    border-top: 1px solid #dddddd;
+    padding: 0.5em;
+    font-size: 0.9em;
 }
 /**
  * Linkroll
  */
 #site-content #content .view-links .views-row-even a {
     color: #333333;
+}
+/**
+ * Image gallery
+ */
+#site-content #content .view-image-viewer .views-row {
+    float: left;
+}
+#site-content #content .view-image-viewer .views-row a.image-thumbnail {
+    border: 1px solid #dddddd;
+    padding: 4px;
+    margin-right: 4px;
+    display: block;
+}
+#site-content #content .view-image-viewer .views-row a.image-thumbnail img {
+    display: block;
 }
 
 /**
@@ -352,8 +363,7 @@ article.comment header .submitted {
     font-size: 1.25em;
     padding: 2px 4px;
     border-bottom:  2px solid #bf0000;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 /**
