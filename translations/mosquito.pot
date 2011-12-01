@@ -4,6 +4,8 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  mosquito.info: n/a
+#  templates/comment-folded.tpl.php: n/a
+#  templates/comment-wrapper.tpl.php: n/a
 #  templates/node.tpl.php: n/a
 #  templates/page.tpl.php: n/a
 #
@@ -11,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-10-31 09:52+0100\n"
+"POT-Creation-Date: 2011-12-01 17:00+0100\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -25,11 +27,19 @@ msgid "Mosquito Darts"
 msgstr ""
 
 #: mosquito.info:0
-msgid "Drupal theme for mosquito-darts.nl"
+msgid "Theme for mosquito-darts.nl"
 msgstr ""
 
 #: mosquito.info:0
 msgid "Content"
+msgstr ""
+
+#: templates/comment-folded.tpl.php:20
+msgid "by"
+msgstr ""
+
+#: templates/comment-wrapper.tpl.php:35
+msgid "Comments"
 msgstr ""
 
 #: templates/node.tpl.php:54
