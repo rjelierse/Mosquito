@@ -12,7 +12,7 @@ body {
 }
 
 body.admin-menu {
-    margin-top: 32px !important;
+    margin-top: 38px !important;
 }
 #admin-menu,
 #admin-menu ul {
@@ -49,7 +49,7 @@ ul.links li {
  * Website header.
  */
 #site-header {
-	height: 160px;
+	/*height: 160px;*/
 	background: url('header-fill.png') top center repeat-y;
 	padding: 0 10px;
 }
@@ -88,7 +88,7 @@ ul.links li {
  * Website content header: contains page title and tabbed navigation.
  */
 #site-content #content-header {
-	height: 40px;
+	/*height: 40px;*/
 	padding: 0;
 	background: #333333;
 	color: #ffffff;
@@ -100,46 +100,59 @@ ul.links li {
 	padding: 0;
 	line-height: 40px;
 }
-#site-content #content-header nav {
+/**
+ * Breadcrumb.
+ */
+#site-content #content-header #breadcrumb {
+    margin-left: 20px;
+    padding: 4px 4px 4px 0;
+}
+#site-content #content-header #breadcrumb a {
+    color: inherit;
+}
+/**
+ * Navigation tabs.
+ */
+#site-content #content-header #context-navigation {
 	padding-top: 4px;
 }
-#site-content #content-header nav ul.tabs li {
+#site-content #content-header #context-navigation ul.tabs li {
 	float: left;
 	border: 0;
 	padding: 0;
 	margin: 0;
 }
-#site-content #content-header nav ul.tabs li a {
+#site-content #content-header #context-navigation ul.tabs li a {
 	display: block;
 	background: inherit;
 	border: 0;
 	margin: 0;
 	padding: 0 20px;
 }
-#site-content #content-header nav ul.primary {
+#site-content #content-header #context-navigation ul.primary {
 	border: 0;
 	margin: 0;
 	padding: 0;
 	float: left;
 }
-#site-content #content-header nav ul.primary li a {
+#site-content #content-header #context-navigation ul.primary li a {
 	height: 36px;
 	line-height: 36px;
 	color: inherit;
 }
-#site-content #content-header nav ul.primary li a.admin {
+#site-content #content-header #context-navigation ul.primary li a.admin {
 	font-style: italic;
 }
-#site-content #content-header nav ul.primary li.active a,
-#site-content #content-header nav ul.primary li a.active {
+#site-content #content-header #context-navigation ul.primary li.active a,
+#site-content #content-header #context-navigation ul.primary li a.active {
 	background: #ffffff;
 	color: #333333;
 }
-#site-content #content-header nav ul.primary li a:hover {
+#site-content #content-header #context-navigation ul.primary li a:hover {
 	background: #efefef;
 	color: #333333;
 }
-#site-content #content-header nav ul.secondary {
+#site-content #content-header #context-navigation ul.secondary {
 	clear: left;
 	border: 0;
 	border-bottom: 2px solid #333333;
@@ -147,7 +160,7 @@ ul.links li {
     padding: 0;
 	height: 34px;
 }
-#site-content #content-header nav ul.secondary li a {
+#site-content #content-header #context-navigation ul.secondary li a {
 	margin-bottom: 10px;
 	border-right: 1px solid #dddddd;
 	border-bottom: 2px solid transparent;
@@ -155,11 +168,11 @@ ul.links li {
     height: 34px;
 	color: #333333;
 }
-#site-content #content-header nav ul.secondary li a.active {
+#site-content #content-header #context-navigation ul.secondary li a.active {
 	color: #bf0000;
 	border-bottom: 2px solid #bf0000;
 }
-#site-content #content-header nav ul.secondary li a:hover {
+#site-content #content-header #context-navigation ul.secondary li a:hover {
 	color: #bf0000;
 }
 /**

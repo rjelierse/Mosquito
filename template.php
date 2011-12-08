@@ -6,6 +6,35 @@
  */
 
 /**
+ * Modify the variables that are pased to the page template.
+ *
+ *  - Adds the variable $in_admin, to indicate whether the page is within the Administration section.
+ *  - Unset $breadcrumb when not inside the Administration section.
+ *
+ * @param array $variables
+ *     The variables to pass to the page template.
+ *
+ * @return void
+ *     Nothing.
+ *
+ * @seealso template_preprocess_page()
+ */
+function mosquito_preprocess_page(&$variables) {
+    $variables['in_admin'] = false;
+
+    if (arg(0) != 'admin') {
+        $variables['in_admin'] = true;
+        unset($variables['breadcrumb']);
+    }
+}
+
+function mosquito_breadcrumb($breadcrumb) {
+    if (!empty($breadcrumb)) {
+        return '<nav id="breadcrumb">' . implode(' » ', $breadcrumb) . ' » </nav>';
+    }
+}
+
+/**
  * Output section form element as HTML5 section.
  *
  * @param array $element

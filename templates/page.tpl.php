@@ -87,7 +87,7 @@
 
 <div id="wrapper">
 
-	<header id="site-header">
+	<header id="site-header" class="clear-block">
 
         <?php if (!empty($logo)): ?>
         <a href="<?php echo $front_page; ?>" title="<?php echo t('Home'); ?>" rel="home" id="site-logo">
@@ -114,7 +114,9 @@
     <section id="site-content" class="clear-block">
 
         <?php if (!empty($title) || !empty($tabs)): ?>
-    	<header id="content-header">
+    	<header id="content-header" class="clear-block">
+
+            <?php echo $breadcrumb; ?>
 
             <?php if (!empty($title)): ?>
         	<h2 id="page-title"><?php echo $title; ?></h2>
