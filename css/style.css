@@ -157,12 +157,13 @@ ul.links li {
 	clear: left;
 	border: 0;
 	border-bottom: 2px solid #333333;
+    background: #ffffff;
 	margin: 0;
     padding: 0;
 	height: 34px;
 }
 #site-content #content-header #context-navigation ul.secondary li a {
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 	border-right: 1px solid #dddddd;
 	border-bottom: 2px solid transparent;
 	line-height: 34px;
