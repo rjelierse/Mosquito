@@ -367,6 +367,13 @@ article.comment footer {
 }
 
 /**
+ * TinyMCE editor field.
+ */
+.mceContentBody {
+    background: #fff;
+}
+
+/**
  * Website footer.
  */
 #site-footer {
