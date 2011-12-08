@@ -109,6 +109,7 @@ ul.links li {
 }
 #site-content #content-header #breadcrumb a {
     color: inherit;
+    text-decoration: none;
 }
 /**
  * Navigation tabs.
