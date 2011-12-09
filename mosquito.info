@@ -3,10 +3,19 @@ description = Theme for mosquito-darts.nl
 version = 6.x-1.1
 core = 6.x
 engine = phptemplate
-# Project hosted outside drupalcode.org
+; Project status URL for theme
+project = mosquito
 project status url = http://dev.sparse.nl/release-history
 
+; Stylesheets
 stylesheets[all][] = fonts/webfont.css
 stylesheets[all][] = css/style.css
 
+; Features
+features[] = favicon
+features[] = logo
+features[] = name
+features[] = primary_links
+
+; Regions
 regions[content] = Content
