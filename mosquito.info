@@ -1,6 +1,6 @@
 name = Mosquito Darts
 description = Theme for mosquito-darts.nl
-version = 6.x-1.1
+version = 6.x-1.2
 core = 6.x
 engine = phptemplate
 ; Project status URL for theme
