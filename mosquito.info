@@ -9,7 +9,9 @@ project status url = http://dev.sparse.nl/release-history
 
 ; Stylesheets
 stylesheets[all][] = fonts/webfont.css
-stylesheets[all][] = css/style.css
+
+; Scripts
+scripts[] = js/mosquito.util.js
 
 ; Features
 features[] = favicon

@@ -76,11 +76,16 @@
 ?><!DOCTYPE HTML>
 <html lang="<?php echo $language->language; ?>" dir="<?php print $language->dir ?>" <?php print $namespaces ?>>
 <head>
-<?php print $head; ?>
-<title><?php print $head_title; ?></title>
-<?php print $styles; ?>
-<?php print $scripts; ?>
-<script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $css_base; ?>">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 480px)" href="<?php echo $css_mdpi; ?>">
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 481px) and (max-width: 960px)" href="<?php echo $css_hdpi; ?>">
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 960px)" href="<?php echo $css_desk; ?>">
+    <?php print $styles; ?>
+    <?php print $scripts; ?>
+    <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
 
 <body class="<?php print $body_classes; ?>">

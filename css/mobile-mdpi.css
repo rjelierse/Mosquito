@@ -1,0 +1,59 @@
+/**
+ * Mosquito theme: MDPI mobile stylesheet.
+ */
+
+#wrapper {
+    margin: 0;
+    width: 100%;
+}
+#wrapper .wrapper-spacer {
+	display: none;
+}
+
+#site-header {
+    padding: 0;
+    background: none #bf0000;
+}
+    #site-logo {
+        display: none;
+    }
+    #site-name {
+        margin: 0;
+        line-height: normal;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    #site-navigation {
+        margin: 0;
+    }
+    #site-navigation li {
+        display: block;
+        padding: 0;
+        line-height: 2em;
+    }
+    #site-navigation a {
+        font-size: 1em;
+    }
+
+#site-content {
+	background: none #ffffff;
+    padding: 0 0 20px;
+}
+    #breadcrumb {
+        display: none;
+    }
+    #page-title {
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    #content {
+        padding: 2px;
+    }
+        #content .two-column-layout .column,
+        #content .three-column-layout .column {
+            float: none;
+            width: auto;
+            margin: 0;
+            margin-bottom: 10px;
+        }

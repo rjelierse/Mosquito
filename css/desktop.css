@@ -1,0 +1,16 @@
+/**
+ * Mosquito stylesheet: desktop version.
+ */
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+#wrapper .wrapper-spacer {
+	height: 20px;
+}
+
+#site-content {
+	background: url('content-fill.png') top center repeat-y;
+	padding: 0 5px 40px 5px;
+}

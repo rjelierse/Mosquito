@@ -24,6 +24,12 @@ function mosquito_preprocess_page(&$variables) {
     drupal_add_js('sites/all/libraries/modernizr/modernizr.min.js', 'core');
     $variables['scripts'] = drupal_get_js();
 
+    // Define stylesheets for media query.
+    $variables['css_base'] = url(drupal_get_path('theme', 'mosquito') . '/css/base.css');
+    $variables['css_mdpi'] = url(drupal_get_path('theme', 'mosquito') . '/css/mobile-mdpi.css');
+    $variables['css_hdpi'] = url(drupal_get_path('theme', 'mosquito') . '/css/mobile-hdpi.css');
+    $variables['css_desk'] = url(drupal_get_path('theme', 'mosquito') . '/css/desktop.css');
+
     $variables['in_admin'] = false;
 
     if (arg(0) != 'admin') {

@@ -1,0 +1,41 @@
+/**
+ * Mosquito theme: HDPI mobile stylesheet.
+ */
+
+#wrapper {
+    margin: 0;
+    width: 100%;
+}
+#wrapper .wrapper-spacer {
+	height: 20px;
+}
+
+#site-header {
+    padding: 0;
+    background: none #bf0000;
+}
+    #site-name {
+        font-size: 2em;
+    }
+    #site-navigation li {
+        line-height: 2em;
+    }
+    #site-navigation a {
+        font-size: 1em;
+        white-space: nowrap;
+    }
+
+#site-content {
+	background: none #ffffff;
+    padding: 0 0 20px;
+}
+    #content {
+        padding: 5px;
+    }
+        #content .two-column-layout .column,
+        #content .three-column-layout .column {
+            float: none;
+            width: auto;
+            margin: 0;
+            margin-bottom: 10px;
+        }
