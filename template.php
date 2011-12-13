@@ -20,6 +20,10 @@
  * @seealso template_preprocess_page()
  */
 function mosquito_preprocess_page(&$variables) {
+    // Add modernizr to theme.
+    drupal_add_js('sites/all/libraries/modernizr/modernizr.min.js', 'core');
+    $variables['scripts'] = drupal_get_js();
+
     $variables['in_admin'] = false;
 
     if (arg(0) != 'admin') {
@@ -28,6 +32,19 @@ function mosquito_preprocess_page(&$variables) {
     }
 }
 
+/**
+ * Override the theme function for the breadcrumb.
+ *
+ * Enclose the breadcrumb in a nav-element instead of a div.
+ *
+ * @param array $breadcrumb
+ *     The link elements that are part of the breadcrumb.
+ *
+ * @return string
+ *     The rendered HTML.
+ *
+ * @seealso theme_breadcrumb()
+ */
 function mosquito_breadcrumb($breadcrumb) {
     if (!empty($breadcrumb)) {
         return '<nav id="breadcrumb">' . implode(' » ', $breadcrumb) . ' » </nav>';
