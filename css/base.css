@@ -11,17 +11,26 @@ body {
     color: #333333;
 }
 
-body.admin-menu {
+html body.admin-menu {
     margin-top: 38px !important;
 }
-#admin-menu,
-#admin-menu ul {
+body.admin-menu #admin-menu,
+body.admin-menu #admin-menu ul {
     line-height: 30px;
     font-size: 12px;
     background:  #333333;
 }
-#admin-menu li.admin-menu-icon img {
+body.admin-menu #admin-menu li.admin-menu-icon img {
     vertical-align: middle;
+}
+body.admin-menu #admin-menu ul ul {
+    line-height: normal;
+}
+body.admin-menu #admin-menu li li.expandable {
+    background-position: 145px center;
+}
+body.admin-menu #admin-menu li li.expandable ul {
+    margin-top: -25px;
 }
 
 ul.links li {
