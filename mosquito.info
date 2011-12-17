@@ -21,3 +21,5 @@ features[] = primary_links
 
 ; Regions
 regions[content] = Content
+regions[left_front] = Frontpage: Left column
+regions[right_front] = Frontpage: Right column
